@@ -1,0 +1,13 @@
+<h2>See de results</h2>
+
+<% if @check %>
+  <% if @found %>
+    <p>You've got a word</p>
+  <% else %>
+    <p>Try again</p>
+  <% end %>
+<% else %>
+<p>This is not an option</p>
+<% end %>
+
+<%= link_to "Play again!", new_path %>
